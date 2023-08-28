@@ -1,22 +1,23 @@
 import time
 import webbrowser
-import random
 import os
+import random
 
 
 print("Hacking started")
 time.sleep(1)
 print("Hacking in progress...")
 a=0
-b=random.randint(1, 1)
+b=random.randint(1,3)
 c=random.randint(1, 4)
 if b == 1:
-   for i in range(100):
-    time.sleep(0.1)
-    print('hacking [%d%%]\r'%i, end="")
-print("hacking ended succesfully")
-time.sleep(1)
-webbrowser.open('https://lublin.eu/lublin/o-miescie/lublin-na-zywo/', new=2)
+    for i in range(100):
+        time.sleep(0.1)
+        print('hacking [%d%%]\r'%i, end="")
+   
+    print("hacking ended succesfully")
+    webbrowser.open('https://lublin.eu/lublin/o-miescie/lublin-na-zywo/', new=2)
+
 if b == 2:
     while a<101:
         print(a)
@@ -24,8 +25,15 @@ if b == 2:
         time.sleep(0.5)
     time.sleep(1)
     print("hacking failed")
+    
 if b ==3:
-    time.sleep(c)
-    print("you got hacked!")
-    time.sleep(5)
-    os.system("shutdown /p")
+    print("you got hacked")
+    if c==1:
+        os.sytem('shutdown /p')
+    if c==2:
+        webbrowser.open('http://fakebsod.com/windows-8-and-10', new=2)
+    if c==3:
+        os.mkdir("C:\PY.dir.3")
+    if c==4:
+       print("hello")
+       print(os.getlogin())
