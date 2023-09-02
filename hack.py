@@ -9,8 +9,8 @@ print("Hacking started")
 time.sleep(1)
 print("Hacking in progress...")
 a=0
-b=random.randint(3,3)
-c=random.randint(4, 4)
+b=random.randint(1,3)
+c=random.randint(1, 4)
 if b == 1:
     for i in range(100):
         time.sleep(0.1)
